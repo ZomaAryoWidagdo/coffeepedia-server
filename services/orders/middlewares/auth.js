@@ -14,15 +14,12 @@ async function authentication(req, res, next) {
       },
     });
 
-    if (!userTrue) {
-      throw "TokenError";
-    }
-
     req.user = {
       id: userTrue.id,
       email: userTrue.email,
       name: userTrue.username,
     };
+
     next();
   } catch (error) {
     next(error);

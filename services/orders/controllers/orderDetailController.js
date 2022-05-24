@@ -19,19 +19,17 @@ module.exports = class Controller {
         };
       }
 
-      if (!response) {
-        const data = {
-          OrderId,
-          ItemId: id,
-          name,
-          price,
-          quantity,
-          imageUrl,
-        };
+      const data = {
+        OrderId,
+        ItemId: id,
+        name,
+        price,
+        quantity,
+        imageUrl,
+      };
 
-        response = await OrderDetail.create(data);
-      }
-      //
+      response = await OrderDetail.create(data);
+
       delete response.dataValues.createdAt;
       delete response.dataValues.updatedAt;
 
@@ -81,14 +79,6 @@ module.exports = class Controller {
           },
         });
         newQty -= 1;
-      } else if (action === "true") {
-        await OrderDetail.update(
-          { quantity },
-          {
-            where: { id },
-          }
-        );
-        newQty = quantity;
       }
       res.status(200).json({
         message: `Quantity updated from ${found.quantity} to ${newQty}`,

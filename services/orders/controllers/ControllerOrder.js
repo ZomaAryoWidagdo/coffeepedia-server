@@ -48,8 +48,8 @@ class ControllerOrder {
 
       res.status(resStatus).json(send);
     } catch (err) {
+      console.log(t.status);
       await t.rollback();
-
       next(err);
     }
   }

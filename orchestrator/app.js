@@ -140,7 +140,7 @@ const resolvers = {
               url: `${urlOrder}/items/${args.id}`,
               method: "GET",
             });
-            item = data;
+            item = data.Item;
             redis.set("item", JSON.stringify(data));
             return item;
           }
