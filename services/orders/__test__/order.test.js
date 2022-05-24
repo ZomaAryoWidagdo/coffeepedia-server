@@ -93,11 +93,13 @@ describe("Order Test", () => {
     expect(response.status).toBe("unpaid");
   });
 
-  // it("should return internal server error created Order", async () => {
+  // it("should return error create Order", async () => {
   //   const res = await request(app)
-  //     .post("/orders")
+  //     .post("/orders/")
   //     .set("accesstoken", accesstoken)
   //     .expect(404);
+  //   expect(res.body).toEqual(expect.any(Object));
+  //   expect(res.body.message).toBe(`INTERNAL SERVER ERROR`);
   // });
 
   it("should return all Orders", async () => {
