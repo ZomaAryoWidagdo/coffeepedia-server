@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1653389911257" clover="3.2.0">
-  <project timestamp="1653389911257" name="All files">
+<coverage generated="1653401324276" clover="3.2.0">
+  <project timestamp="1653401324276" name="All files">
     <metrics statements="289" coveredstatements="282" conditionals="51" coveredconditionals="46" methods="36" coveredmethods="36" elements="376" coveredelements="364" complexity="0" loc="289" ncloc="289" packages="6" files="25" classes="25"/>
     <package name="orders">
       <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
@@ -127,11 +127,11 @@
         <line num="4" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="35" count="7" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="34" count="7" type="stmt"/>
       </file>
       <file name="orderDetailController.js" path="D:\P3\Final Project\coffeepedia-server\services\orders\controllers\orderDetailController.js">
         <metrics statements="35" coveredstatements="35" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
@@ -179,7 +179,7 @@
         <line num="1" count="7" type="stmt"/>
         <line num="3" count="7" type="stmt"/>
         <line num="9" count="7" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
         <line num="13" count="7" type="stmt"/>
       </file>
       <file name="bcrypt.js" path="D:\P3\Final Project\coffeepedia-server\services\orders\helpers\bcrypt.js">

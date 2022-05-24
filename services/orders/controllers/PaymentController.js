@@ -6,7 +6,7 @@ class PaymentController {
 
       let parameter = {
         transaction_details: {
-          order_id: "" + OrderId + getCurrentTimestamp(),
+          order_id: OrderId,
           gross_amount: totalPrice,
         },
         credit_card: {
@@ -14,7 +14,6 @@ class PaymentController {
         },
         customer_details: {
           email: email,
-          // name: email,
         },
       };
 
